@@ -1,0 +1,146 @@
+@font-face {
+    font-family: "TTLakes";
+    src: url("./fonts/TTLakes-Regular.woff");
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: "TTLakes";
+    src: url("./fonts/TTLakes-Medium.woff");
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: "TTLakes";
+    src: url("./fonts/TTLakes-Bold.woff");
+    font-weight: 700;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    width: 320px;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),-2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+
+    .header {
+		// .header__menu
+		&__menu {
+            display: flex;
+            align-items: center;
+            padding: 25px;
+            
+            .header {
+              
+                // .header__icon--logo
+                &__icon--logo {
+                    margin-left: 17px;
+                }
+
+                // .header__icon--search
+                &__icon--search {
+                    margin-left: 80px;
+                }
+        }
+        
+		}
+}
+
+    // .mobile-menu__list
+    &__list {
+        font-family: TTLakes;
+        font-size: 20px;
+        font-weight: 500;
+  
+        a{  
+            display: block;
+            height: 50px;
+            padding-top: 5px;
+            padding-left: 25px;
+            margin-bottom: 10px;
+        }
+        a.active{
+          color: rgb(126, 126, 130);
+          border-left: solid 5px rgb(65, 246, 215);
+          border-radius: -50%;
+        }
+        a:hover {
+          background-color: darkgray;
+          opacity: 0.6;
+          transition: 0.5s linear;
+        }
+       
+    }
+    .footer {
+      
+
+      // .footer__icons
+  
+      &__icons {
+        margin-left: 25px;
+        display: flex;
+        gap: 15px;
+        margin-bottom: 15px;
+      }
+  
+      // .footer__contacts
+  
+      &__contacts {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        margin-bottom: 10px;
+
+        .footer__email{
+        color: rgb(27, 28, 33);
+        font-family: TTLakes;
+        font-size: 16px;
+        font-weight: 500;
+        }
+
+        .footer__number{
+          color: rgb(27, 28, 33);
+          font-family: TTLakes;
+          font-size: 24px;
+          font-weight: 700;
+        }
+      }
+  
+      // .footer__lang--switch
+  
+      &__lang--switch {
+        margin-left: 25px;
+        margin-bottom: 30px;
+        color: rgb(27, 28, 33);
+        font-family: TTLakes;
+        font-size: 16px;
+        font-weight: 500;
+
+
+        a.active{
+          color: rgb(126, 126, 130);
+        }
+      }
+
+  }
+  
+  
+  }
+
